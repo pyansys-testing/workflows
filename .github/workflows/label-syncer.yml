@@ -7,7 +7,7 @@ on:
     branches:
       - main
     paths:
-      - labels.yml
+      - .github/workflows/labels.yml
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -17,4 +17,4 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          manifest: labels.yml
+          manifest: .github/workflows/labels.yml
