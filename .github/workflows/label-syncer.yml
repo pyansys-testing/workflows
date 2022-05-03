@@ -14,4 +14,4 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.token }}
         with:
-          manifest: .github/workflows/labels.yml
+          manifest: https://raw.githubusercontent.com/pyansys-testing/workflows/main/.github/workflows/labels.yml
